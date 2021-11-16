@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>factorizer</title>
+  <link rel="stylesheet" href="style/factorizer.css">
+</head>
+<body>
+  <div class="login-box">
+    <h2>Fast Modular Exponentiation</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="positive-integer" required="" id="base">
+        <label>Base</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="positive-integer" required="" id="exponent">
+        <label>Exponent</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="positive-integer" required="" id="mod">
+        <label>Modulo</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="" required="" id="output" readonly hidden>
+      </div>
+      <input type="button" value="Submit" onclick="FastModularExponentiation()" class="btn-submit-style">
+    </form>
+  </div>
+  <script src="js/exponentiation.js"></script>
+</body>
+</html>

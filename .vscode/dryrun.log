@@ -1,0 +1,6 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Users/amine/OneDrive/Desktop/College/FALL 2021/455/Project'
+make: Leaving directory 'c:/Users/amine/OneDrive/Desktop/College/FALL 2021/455/Project'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+ 
