@@ -4,9 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Chinese Remaindre Theorem</title>
+  <link rel="stylesheet" href="style/chinese.css">
 </head>
 <body>
-  
+  <div class="login-box">
+    <h2>Chinese Remainder Theorem</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="positive-integer" required="" id="positive-A">
+        <label>Enter a positive integer A</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="positive-integer" required="" id="positive-M">
+        <label>Enter a positive integer M</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="" required="" id="output-m" readonly hidden>
+        <label readonly hidden id="label_m"></label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="" required="" id="output-a" readonly hidden>
+        <label readonly hidden id="label_a"></label>
+      </div>
+      <input type="button" value="Submit" onclick="ChineseRemainderTheorem()" class="btn-submit-style">
+    </form>
+  </div>
+  <script src="js/chinese.js"></script>
 </body>
 </html>
