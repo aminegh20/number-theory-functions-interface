@@ -8,8 +8,9 @@ function Totient() {
     output.hidden = false;
     return;
   } 
-  var result = number;
-  for (var i = 2; i * i < number + 1; i++) {
+  number = BigInt(number);
+  var result = BigInt(number);
+  for (var i = 2n; i * i < number + 1n; i++) {
     if (number % i == 0) {
       while (number % i == 0) {
         number =  number / i;

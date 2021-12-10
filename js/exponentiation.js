@@ -21,13 +21,16 @@ function FastModularExponentiation() {
     output.hidden = false;
     return;
   } 
-  var result = 1;
-  while (exponent > 0) {
-    if (exponent & 1) {
+  var result = 1n;
+  exponent = BigInt(exponent);
+  mod = BigInt(mod);
+  base = BigInt(base);
+  while (exponent > 0n) {
+    if (exponent & 1n) {
       result = (result * base) % mod;
     }
     base = (base * base) % mod;
-    exponent = exponent >> 1;
+    exponent = exponent >> 1n;
   }
   output.value = result;
   output.style.color = "white";

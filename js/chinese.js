@@ -17,17 +17,19 @@ function ChineseRemainderTheorem() {
     return;
   } 
   var factors = [];
-  for (var d = 2; d * d < number_m + 1; d++) {
-    if (number_m % d == 0) {
-      var factor = 1;
-      while(number_m % d == 0) {
+  number_m = BigInt(number_m);
+  number_a = BigInt(number_a);
+  for (var d = 2n; d * d < number_m + 1n; d++) {
+    if (number_m % d == 0n) {
+      var factor = 1n;
+      while(number_m % d == 0n) {
         factor *= d;
         number_m = number_m / d;
       }
       factors.push(factor);
     }
   }
-  if (number_m > 1) {
+  if (number_m > 1n) {
     factors.push(number_m);
   }
   var as = "A <=> (";
